@@ -12,6 +12,10 @@ switch case的汇编形式为cmpl, jmp对
 	ja	.L2
 ```
 
+假如case局部连续，可以构成jump table
+
+不连续的部分用cmpl, jmp额外处理
+
 ### 变量地址
 
 name | addr
